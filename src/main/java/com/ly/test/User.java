@@ -5,6 +5,8 @@ public class User {
     private String name;
 
     private String password;
+
+    private String haha;
     private Credit credit;
 
     public  User (Credit credit){
@@ -28,5 +30,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHaha() {
+        return haha;
+    }
+
+    public void setHaha(String haha) {
+        this.haha = haha;
     }
 }
