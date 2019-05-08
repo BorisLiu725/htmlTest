@@ -4,7 +4,7 @@ public class User {
 
     private String name;
 
-
+    private String password;
     private Credit credit;
 
     public  User (Credit credit){
@@ -22,5 +22,11 @@ public class User {
     }
 
 
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
