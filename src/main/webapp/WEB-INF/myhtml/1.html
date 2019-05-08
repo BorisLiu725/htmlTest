@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- 类中需要js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/1.css">
+    <script src="../js/1.js"></script>
+
+</head>
+
+<body>
+
+<div class="container" id="container">
+    <div class="row" id="Home_Head">
+        <button type="button" class="btn btn-primary btn-lg active" id="Home_Register">注册</button>
+        <button type="button" class="btn btn-default btn-lg active" id="Home_Login">登录</button>
+    </div>
+    <div class="row" id="Homepage_Login">
+        <div class="col-md-8"></div>
+        <div class="col-md-4" id="Home_right">
+            <form class="form-horizontal">
+                <div class="form-group">
+
+                    <label class="col-md-4 control-label">用户名</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="get_username" placeholder="用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">密码</label>
+                    <div class="col-md-8">
+                        <input type="password" class="form-control" id="get_password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-sm-10">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-sm-10">
+                        <input type="button" class="btn btn-default" id="Login" value="登录">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" id="Homepage_Register">
+        <div class="col-md-8"></div>
+        <div class="col-md-4" style="font-size: 20px">
+            <form class="form-horizontal">
+                <div class="form-group">
+
+                    <label class="col-md-4 control-label">用户名</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="username" id="post_username"
+                               placeholder="用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label class="col-md-4 control-label">邮箱</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="username" id="post_mail" placeholder="邮箱">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">密码</label>
+                    <div class="col-md-8">
+                        <input type="password" class="form-control" name="password" id="post_password"
+                               placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-sm-10">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-sm-10">
+                        <input type="button" class="btn btn-default" id="Register" value="注册">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <video src="./title-time.mp4" class="video_homepage" autoplay="autoplay" loop="loop" width="100%"></video>
+
+</div>
+
+</body>
+</html>

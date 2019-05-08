@@ -1,0 +1,109 @@
+/*
+    继承的话，只会继承一些无关紧要的东西
+    像宽高啥的就不会继承
+*/
+
+/*div{*/
+    /*border: 1px solid red;*/
+/*}*/
+
+.hall{
+    width: 820px;
+    /*行内块级元素，不换行但是是块级元素*/
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+}
+.hall .seat-example{
+    margin: 30px 0 30px 118px;
+}
+
+.hall .seat-example .example{
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 38px;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+}
+
+.hall .seat-example .selectable-example{
+    background-image: url("../../images/index1.png");
+}
+.hall .seat-example .sold-example{
+    background-image: url("../../images/index2.png");
+}
+.hall .seat-example .selected-example{
+    background-image: url("../../images/index3.png");
+}
+.hall .seat-example .couple-example{
+    padding-left: 77px;
+    background-image: url("../../images/index4.png");
+}
+
+.hall .seats-block .row-id-container{
+    width: 15px;
+    float: left;
+    margin-top: 112px;
+    white-space: normal;
+}
+
+.row-id-container .row-id{
+    font-size: 30px;
+    color: silver;
+    display:inline-block;
+
+    /*border: 1px solid red;*/
+}
+
+.seats-block .screen-container .screen{
+    width: 550px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background-image: url("../../images/index5.png");
+    background-position-x: center;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+
+
+.seats-block .screen-container .c-screen-line{
+    width: 0;
+    border-left: 1px dashed lavender;
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    left: 50%;
+}
+
+
+
+.seats-block .seats-container{
+    display: inline-block;
+
+
+}
+
+.seats-block .seats-wrapper{
+    display: inline-block;
+    min-width: 550px;
+}
+
+.seats-block .row{
+    white-space: nowrap;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.seats-block .seat{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background-image: url("../../images/index1.png");
+    /*background-position: 0 1px;*/
+}

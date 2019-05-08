@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        /*.view_body{*/
+            /*background-image: url("../../images/1.jpg");*/
+        /*}*/
+
+
+        .view_mid_left{
+            /*//background-color: aqua;*/
+            height: 235px;
+            width: 20%;
+            display: flex;
+            float: left;
+            background-image: url("../../images/left_image.jpg");
+        }
+
+        .view_mid_left ul li{
+            /*去掉小黑点*/
+           /*list-style-type: none;*/
+            list-style: none;
+        }
+
+        .view_mid_right_table table{
+            width: 800px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        tr:hover{
+            background-color: aqua;
+        }
+       /* tr:nth-child(even){
+            background-color: aquamarine;
+        }*/
+        .view_mid_right_table table td{
+            /*background-color: cornflowerblue;*/
+            border: 1px solid black;
+        }
+        .view_foot{
+            width: 100%;
+            /*display:inline的作用即可以将一个块级元素转换成行内元素，那么这个块级元素将不能再设置宽和高以及上下方向的margin和padding。*/
+            display: flex;
+            justify-content: center;
+            /*align-items: center;*/
+        }
+
+        .view_bottom{
+            /*弹性盒子*/
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /*justify-items: center;*/
+            /*border: 1px solid gold;*/
+        }
+
+        .view_bottom ul li{
+            /*内联元素不换行*/
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <!--主体-->
+    <div class="view_body">
+        <!--顶部-->
+        <div class="view_top">
+            <img src="../../images/top_image.jpg" width="100%" height="100" alt="top_image" title="这是一张顶部图片">
+        </div>
+        <!--中间-->
+        <div class="view_mid">
+            <!--左边-->
+            <div class="view_mid_left">
+                <ul>
+                    <li>录入学生信息</li>
+                    <li>查询学生信息</li>
+                    <li>修改学生信息</li>
+                    <li>导出学生信息</li>
+                    <li>......</li>
+                    <li>......</li>
+                    <li>......</li>
+                </ul>
+            </div>
+            <!--右边-->
+            <div class="view_mid_right">
+                <div class="view_mid_right_top">
+                    <!--查询条件-->
+                    <span>
+                        查询条件：学院
+                        <select>
+                            <option>--请选择--</option>
+                            <option>计算机学院</option>
+                            <option>电子工程学院</option>
+                        </select>
+                        班级
+                        <input type="text" name="stu_class"/>
+                        姓名
+                        <input type="text" name="stu_name"/>
+                        学号
+                        <input type="text" name="stu_num"/>
+                        <input type="button" value="查询"/>
+                    </span>
+                </div>
+                <br/>
+                <br/>
+                <!--表格部分-->
+                <div class="view_mid_right_table">
+                    <table cellpadding="0" cellspacing="0">
+                        <caption >学生名单</caption>
+                        <tr>
+                            <td>学院</td>
+                            <td>班级</td>
+                            <td>姓名</td>
+                            <td>学号</td>
+                        </tr>
+                        <tr>
+                            <td>计算机学院</td>
+                            <td>软件1701</td>
+                            <td>刘勇</td>
+                            <td>0417021</td>
+                        </tr>
+                        <tr>
+                            <td>计算机学院</td>
+                            <td>软件1701</td>
+                            <td>徐恒</td>
+                            <td>04173022</td>
+                        </tr>
+                        <tr>
+                            <td>计算机学院</td>
+                            <td>软件1702</td>
+                            <td>余耿凯</td>
+                            <td>04173025</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <div class="view_bottom" >
+
+            <ul>
+                前一页
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                后一页
+            </ul>
+
+        </div>
+        <!--页脚-->
+        <br/>
+        <hr/>
+
+        <div class="view_foot">
+            <span>copyright@软件1701刘勇</span>
+        </div>
+    </div>
+</body>
+</html>
