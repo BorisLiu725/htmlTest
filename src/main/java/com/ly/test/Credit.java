@@ -1,5 +1,7 @@
 package com.ly.test;
-
+/**
+ * haha
+ * */
 public class Credit {
     private Long ranking;
 
